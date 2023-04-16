@@ -89,6 +89,10 @@ while True:
         break
 capture.release()
 cv2.destroyAllWindows()
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.imshow('Gray', gray)
+cv2.imshow('image', sqr_img)
+cv2.waitKey(1000)
 while not gameOver:
         continue
 if NotWon:
